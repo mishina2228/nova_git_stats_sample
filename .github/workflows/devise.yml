@@ -1,0 +1,31 @@
+name: Devise
+
+on:
+  schedule:
+    - cron: '30 1 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  devise:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Checkout repos
+        run: git submodule update --init repos/${{ github.job }}
+      - name: Pull latest repos
+        run: git submodule update --remote repos/${{ github.job }}
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+      - name: Execute GitStats
+        run: bundle exec git_stats generate -p repos/${{ github.job }} -o docs/git_stats/${{ github.job }} --silent
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatic update of ${{ github.job }} repository statistics
+          commit_author: GitHub Actions <actions@github.com>
+          file_pattern: docs/* repos/${{ github.job }}

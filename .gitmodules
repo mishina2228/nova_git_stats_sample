@@ -1,0 +1,24 @@
+[submodule "repos/jquery"]
+	path = repos/jquery
+	url = https://github.com/jquery/jquery.git
+[submodule "repos/devise"]
+	path = repos/devise
+	url = https://github.com/heartcombo/devise.git
+[submodule "repos/devise_invitable"]
+	path = repos/devise_invitable
+	url = https://github.com/scambra/devise_invitable.git
+[submodule "repos/john"]
+	path = repos/john
+	url = https://github.com/openwall/john.git
+[submodule "repos/rails"]
+	path = repos/rails
+	url = https://github.com/rails/rails.git
+[submodule "repos/vue"]
+	path = repos/vue
+	url = https://github.com/vuejs/vue.git
+[submodule "repos/react"]
+	path = repos/react
+	url = https://github.com/facebook/react.git
+[submodule "repos/bootstrap"]
+	path = repos/bootstrap
+	url = https://github.com/twbs/bootstrap.git
