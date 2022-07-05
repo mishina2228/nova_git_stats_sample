@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Checkout repos
+      - name: Checkout repo
         run: git submodule update --init repos/${{ github.job }}
-      - name: Pull latest repos
+      - name: Pull latest repo
         run: git submodule update --remote repos/${{ github.job }}
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
