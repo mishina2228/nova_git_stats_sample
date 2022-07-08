@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NovaGitStats - rails</title>
+<meta charset='utf-8'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' rel='stylesheet'>
+<link href='../../../assets/menu.css' rel='stylesheet' type='text/css'>
+<script crossorigin='anonymous' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-data.js' type='text/javascript'></script>
+</head>
+<body>
+<nav class='navbar navbar-light fixed-top navbar-expand-md bg-light'>
+<div class='container'>
+<a class='navbar-brand' href='../../../index.html'>NovaGitStats - rails</a>
+<button class='menu-icon navbar-toggler collapsed' data-bs-target='#navbar-menu' data-bs-toggle='collapse'>
+<span class='navbar-toggler-icon'></span>
+</button>
+<div class='navbar-collapse collapse' id='navbar-menu'>
+<ul class='nav navbar-nav'>
+<li class='nav-item'>
+<a class='nav-link' href='../../../general.html'>General</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='nav-item active'>
+<a class='nav-link' href='../../best_authors.html'>Authors</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../files/by_date.html'>Files</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='nav-item'>
+<a class='nav-link' href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link active' href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='text-center'>Changed lines by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Jacek Becela","type": "spline","data": [ [ 1210247244000,243 ],[ 1210291200000,243 ],[ 1210377600000,243 ],[ 1210464000000,243 ],[ 1210550400000,243 ],[ 1210636800000,243 ],[ 1210723200000,243 ],[ 1210809600000,243 ],[ 1210896000000,243 ],[ 1210982400000,243 ],[ 1211068800000,243 ],[ 1211155200000,243 ],[ 1211241600000,243 ],[ 1211328000000,243 ],[ 1211414400000,243 ],[ 1211500800000,243 ],[ 1211587200000,243 ],[ 1211673600000,243 ],[ 1211760000000,243 ],[ 1211846400000,243 ],[ 1212003044000,301 ],[ 1212019200000,301 ],[ 1212105600000,301 ],[ 1212192000000,301 ],[ 1212278400000,301 ],[ 1212364800000,301 ],[ 1212451200000,301 ],[ 1212537600000,301 ],[ 1212624000000,301 ],[ 1212710400000,301 ],[ 1212796800000,301 ],[ 1212883200000,301 ],[ 1212969600000,301 ],[ 1213056000000,301 ],[ 1213142400000,301 ],[ 1213228800000,301 ],[ 1213315200000,301 ],[ 1213401600000,301 ],[ 1213488000000,301 ],[ 1213574400000,301 ],[ 1213660800000,301 ],[ 1213747200000,301 ],[ 1213833600000,301 ],[ 1213920000000,301 ],[ 1214006400000,301 ],[ 1214092800000,301 ],[ 1214179200000,301 ],[ 1214265600000,301 ],[ 1214352000000,301 ],[ 1214438400000,301 ],[ 1214524800000,301 ],[ 1214611200000,301 ],[ 1214697600000,301 ],[ 1214784000000,301 ],[ 1214870400000,301 ],[ 1214956800000,301 ],[ 1215043200000,301 ],[ 1215129600000,301 ],[ 1215216000000,301 ],[ 1215302400000,301 ],[ 1215388800000,301 ],[ 1215475200000,301 ],[ 1215632044000,312 ] ] }] };
+        
+        window.chart_charts.total_changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.total_changed_lines_by_author_by_date"></div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1210204800000,243 ],[ 1210291200000,0 ],[ 1210377600000,0 ],[ 1210464000000,0 ],[ 1210550400000,0 ],[ 1210636800000,0 ],[ 1210723200000,0 ],[ 1210809600000,0 ],[ 1210896000000,0 ],[ 1210982400000,0 ],[ 1211068800000,0 ],[ 1211155200000,0 ],[ 1211241600000,0 ],[ 1211328000000,0 ],[ 1211414400000,0 ],[ 1211500800000,0 ],[ 1211587200000,0 ],[ 1211673600000,0 ],[ 1211760000000,0 ],[ 1211846400000,0 ],[ 1211932800000,58 ],[ 1212019200000,0 ],[ 1212105600000,0 ],[ 1212192000000,0 ],[ 1212278400000,0 ],[ 1212364800000,0 ],[ 1212451200000,0 ],[ 1212537600000,0 ],[ 1212624000000,0 ],[ 1212710400000,0 ],[ 1212796800000,0 ],[ 1212883200000,0 ],[ 1212969600000,0 ],[ 1213056000000,0 ],[ 1213142400000,0 ],[ 1213228800000,0 ],[ 1213315200000,0 ],[ 1213401600000,0 ],[ 1213488000000,0 ],[ 1213574400000,0 ],[ 1213660800000,0 ],[ 1213747200000,0 ],[ 1213833600000,0 ],[ 1213920000000,0 ],[ 1214006400000,0 ],[ 1214092800000,0 ],[ 1214179200000,0 ],[ 1214265600000,0 ],[ 1214352000000,0 ],[ 1214438400000,0 ],[ 1214524800000,0 ],[ 1214611200000,0 ],[ 1214697600000,0 ],[ 1214784000000,0 ],[ 1214870400000,0 ],[ 1214956800000,0 ],[ 1215043200000,0 ],[ 1215129600000,0 ],[ 1215216000000,0 ],[ 1215302400000,0 ],[ 1215388800000,0 ],[ 1215475200000,0 ],[ 1215561600000,11 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+        
+        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.changed_lines_by_author_by_date"></div>
+</div>
+</div>
+</div>
+
+
+</div>
+<script crossorigin='anonymous' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js'></script>
+</body>
+</html>
