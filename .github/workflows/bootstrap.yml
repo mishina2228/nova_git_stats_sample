@@ -25,7 +25,7 @@ jobs:
           ruby-version: '3.0'
           bundler-cache: true
       - name: Execute GitStats
-        run: bundle exec git_stats generate -p repos/${{ github.job }} -o docs/git_stats/${{ github.job }} --silent
+        run: bundle exec git_stats generate -p repos/${{ github.job }} -o docs/nova_git_stats/${{ github.job }} --silent
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic update of ${{ github.job }} repository statistics
