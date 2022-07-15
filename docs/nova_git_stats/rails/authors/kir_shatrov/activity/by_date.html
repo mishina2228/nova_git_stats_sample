@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NovaGitStats - rails</title>
+<meta charset='utf-8'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' rel='stylesheet'>
+<link href='../../../assets/menu.css' rel='stylesheet' type='text/css'>
+<script crossorigin='anonymous' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-data.js' type='text/javascript'></script>
+</head>
+<body>
+<nav class='navbar navbar-light fixed-top navbar-expand-md bg-light'>
+<div class='container'>
+<a class='navbar-brand' href='../../../index.html'>NovaGitStats - rails</a>
+<button class='menu-icon navbar-toggler collapsed' data-bs-target='#navbar-menu' data-bs-toggle='collapse'>
+<span class='navbar-toggler-icon'></span>
+</button>
+<div class='navbar-collapse collapse' id='navbar-menu'>
+<ul class='nav navbar-nav'>
+<li class='nav-item'>
+<a class='nav-link' href='../../../general.html'>General</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='nav-item active'>
+<a class='nav-link' href='../../best_authors.html'>Authors</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../files/by_date.html'>Files</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='nav-item' role='presentation'>
+<a class='nav-link active' href='by_date.html'>Activity by date</a>
+</li>
+<li class='nav-item' role='presentation'>
+<a class='nav-link' href='hour_of_day.html'>Hour of day</a>
+</li>
+<li class='nav-item' role='presentation'>
+<a class='nav-link' href='day_of_week.html'>Day of week</a>
+</li>
+<li class='nav-item' role='presentation'>
+<a class='nav-link' href='hour_of_week.html'>Hour of week</a>
+</li>
+<li class='nav-item' role='presentation'>
+<a class='nav-link' href='month_of_year.html'>Month of year</a>
+</li>
+<li class='nav-item' role='presentation'>
+<a class='nav-link' href='year.html'>Year</a>
+</li>
+<li class='nav-item' role='presentation'>
+<a class='nav-link' href='year_month.html'>Year and month</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header text-center'>
+<h1>Activity by date</h1>
+<h3>Kir Shatrov &lt;kirs@users.noreply.github.com&gt;</h3>
+</div>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1483202543000,1 ],[ 1483228800000,0 ],[ 1483315200000,0 ],[ 1483401600000,0 ],[ 1483488000000,0 ],[ 1483574400000,0 ],[ 1483660800000,0 ],[ 1483747200000,0 ],[ 1483833600000,0 ],[ 1483920000000,0 ],[ 1484006400000,0 ],[ 1484092800000,0 ],[ 1484179200000,0 ],[ 1484265600000,0 ],[ 1484352000000,0 ],[ 1484438400000,0 ],[ 1484524800000,0 ],[ 1484611200000,0 ],[ 1484697600000,0 ],[ 1484784000000,0 ],[ 1484870400000,0 ],[ 1484956800000,0 ],[ 1485043200000,0 ],[ 1485129600000,0 ],[ 1485216000000,0 ],[ 1485302400000,0 ],[ 1485388800000,0 ],[ 1485475200000,0 ],[ 1485561600000,0 ],[ 1485648000000,0 ],[ 1485734400000,0 ],[ 1485820800000,0 ],[ 1485907200000,0 ],[ 1485993600000,0 ],[ 1486080000000,0 ],[ 1486166400000,0 ],[ 1486252800000,0 ],[ 1486339200000,0 ],[ 1486425600000,0 ],[ 1486512000000,0 ],[ 1486598400000,0 ],[ 1486684800000,0 ],[ 1486771200000,0 ],[ 1486857600000,0 ],[ 1486944000000,0 ],[ 1487030400000,0 ],[ 1487116800000,0 ],[ 1487203200000,0 ],[ 1487289600000,0 ],[ 1487376000000,0 ],[ 1487462400000,0 ],[ 1487548800000,0 ],[ 1487635200000,0 ],[ 1487721600000,0 ],[ 1487808000000,0 ],[ 1487894400000,0 ],[ 1487980800000,0 ],[ 1488124822000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+        
+        window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.activity_by_date"></div>
+</div>
+</div>
+
+
+</div>
+<script crossorigin='anonymous' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js'></script>
+</body>
+</html>
