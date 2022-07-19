@@ -49,7 +49,7 @@ GEM
     temple (0.8.2)
     thor (1.2.1)
     tilt (2.0.10)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
 
 PLATFORMS
