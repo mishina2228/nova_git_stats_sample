@@ -48,7 +48,7 @@ GEM
       loofah (~> 2.3)
     temple (0.8.2)
     thor (1.2.1)
-    tilt (2.0.10)
+    tilt (2.0.11)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
 
