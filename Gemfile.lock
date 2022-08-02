@@ -15,7 +15,7 @@ GEM
     builder (3.2.4)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
-    erubi (1.10.0)
+    erubi (1.11.0)
     haml (5.2.2)
       temple (>= 0.8.0)
       tilt
