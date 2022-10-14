@@ -73,7 +73,7 @@ body { padding-top: 60px; }
 <div class='tab-pane active'>
 <div class='page-header text-center'>
 <h1>Day of week</h1>
-<h3>Jonathan Hefner &lt;jonathan@hefner.pro&gt;</h3>
+<h3>Jonathan Hefner &amp;lt;jonathan@hefner.pro&amp;gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
@@ -93,18 +93,18 @@ body { padding-top: 60px; }
 <td>90</td>
 <td>85</td>
 <td>126</td>
-<td>99</td>
+<td>102</td>
 <td>81</td>
 <td>53</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>11.3</td>
-<td>15.0</td>
-<td>14.1</td>
-<td>20.9</td>
-<td>16.4</td>
-<td>13.5</td>
+<td>11.2</td>
+<td>14.9</td>
+<td>14.0</td>
+<td>20.8</td>
+<td>16.9</td>
+<td>13.4</td>
 <td>8.8</td>
 </tr>
 </table>
@@ -112,7 +112,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 68,90,85,126,99,81,53 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 68,90,85,126,102,81,53 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 

@@ -73,7 +73,7 @@ body { padding-top: 60px; }
 <div class='tab-pane active'>
 <div class='page-header text-center'>
 <h1>Day of week</h1>
-<h3>Deepak Mahakale &lt;deepakmahakale@gmail.com&gt;</h3>
+<h3>Deepak Mahakale &amp;lt;deepakmahakale@gmail.com&amp;gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
@@ -90,7 +90,7 @@ body { padding-top: 60px; }
 <tr>
 <th>Commits</th>
 <td>0</td>
-<td>1</td>
+<td>2</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -100,19 +100,19 @@ body { padding-top: 60px; }
 <tr>
 <th>Percentage</th>
 <td>0.0</td>
-<td>33.3</td>
+<td>50.0</td>
 <td>0.0</td>
-<td>33.3</td>
+<td>25.0</td>
 <td>0.0</td>
 <td>0.0</td>
-<td>33.3</td>
+<td>25.0</td>
 </tr>
 </table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 0,1,0,1,0,0,1 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 0,2,0,1,0,0,1 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
