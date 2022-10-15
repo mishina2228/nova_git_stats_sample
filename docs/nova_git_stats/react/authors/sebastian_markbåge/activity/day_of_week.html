@@ -73,7 +73,7 @@ body { padding-top: 60px; }
 <div class='tab-pane active'>
 <div class='page-header text-center'>
 <h1>Day of week</h1>
-<h3>Sebastian Markbåge &lt;sebastian@calyptus.eu&gt;</h3>
+<h3>Sebastian Markbåge &amp;lt;sebastian@calyptus.eu&amp;gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
@@ -92,27 +92,27 @@ body { padding-top: 60px; }
 <td>30</td>
 <td>171</td>
 <td>199</td>
-<td>177</td>
-<td>205</td>
-<td>140</td>
+<td>178</td>
+<td>206</td>
+<td>141</td>
 <td>36</td>
 </tr>
 <tr>
 <th>Percentage</th>
 <td>3.1</td>
 <td>17.8</td>
-<td>20.8</td>
+<td>20.7</td>
 <td>18.5</td>
 <td>21.4</td>
-<td>14.6</td>
-<td>3.8</td>
+<td>14.7</td>
+<td>3.7</td>
 </tr>
 </table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 30,171,199,177,205,140,36 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 30,171,199,178,206,141,36 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
