@@ -48,10 +48,10 @@ body { padding-top: 60px; }
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
 <li class='nav-item'>
-<a class='nav-link active' href='commits_by_date.html'>Commits by date</a>
+<a class='nav-link' href='commits_by_date.html'>Commits by date</a>
 </li>
 <li class='nav-item'>
-<a class='nav-link' href='changed_lines_by_date.html'>Changed lines by date</a>
+<a class='nav-link active' href='changed_lines_by_date.html'>Changed lines by date</a>
 </li>
 <li class='nav-item'>
 <a class='nav-link' href='insertions_by_date.html'>Lines added by date</a>
@@ -63,21 +63,34 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='text-center'>Commits by date</h1>
+<h1 class='text-center'>Changed lines by date</h1>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lauren Tan","type": "spline","data": [ [ 1663180746000,1 ],[ 1663200000000,1 ],[ 1663286400000,1 ],[ 1663372800000,1 ],[ 1663459200000,1 ],[ 1663545600000,1 ],[ 1663632000000,1 ],[ 1663718400000,1 ],[ 1663804800000,1 ],[ 1663970112000,2 ],[ 1663977600000,3 ],[ 1663979657000,3 ],[ 1664064000000,3 ],[ 1664150400000,3 ],[ 1664236800000,3 ],[ 1664323200000,3 ],[ 1664484327000,4 ],[ 1664555478000,5 ],[ 1664555481000,6 ],[ 1664582400000,6 ],[ 1664668800000,6 ],[ 1664755200000,6 ],[ 1664898741000,7 ],[ 1664911776000,8 ],[ 1664928000000,8 ],[ 1665014400000,8 ],[ 1665100800000,8 ],[ 1665187200000,8 ],[ 1665273600000,8 ],[ 1665360000000,8 ],[ 1665446400000,8 ],[ 1665532800000,8 ],[ 1665619200000,8 ],[ 1665705600000,8 ],[ 1665792000000,8 ],[ 1665878400000,8 ],[ 1665964800000,8 ],[ 1666051200000,8 ],[ 1666205967000,9 ],[ 1666206226000,10 ],[ 1666224000000,10 ],[ 1666310400000,10 ],[ 1666396800000,10 ],[ 1666483200000,10 ],[ 1666569600000,10 ],[ 1666656000000,10 ],[ 1666742400000,10 ],[ 1666828800000,10 ],[ 1666915200000,10 ],[ 1667001600000,10 ],[ 1667088000000,10 ],[ 1667174400000,10 ],[ 1667260800000,10 ],[ 1667347200000,10 ],[ 1667433600000,10 ],[ 1667520000000,10 ],[ 1667606400000,10 ],[ 1667692800000,10 ],[ 1667779200000,10 ],[ 1667865600000,10 ],[ 1667952000000,10 ],[ 1668038400000,10 ],[ 1668124800000,10 ],[ 1668211200000,10 ],[ 1668297600000,10 ],[ 1668384000000,10 ],[ 1668470400000,10 ],[ 1668556800000,10 ],[ 1668643200000,10 ],[ 1668729600000,10 ],[ 1668816000000,10 ],[ 1668902400000,10 ],[ 1669057403000,11 ],[ 1669063369000,12 ],[ 1669064450000,13 ],[ 1669070152000,14 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Jimmy Lai","type": "spline","data": [ [ 1669077221000,84 ] ] }] };
         
-        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+        window.chart_charts.total_changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.commits_sum_by_author_by_date"></div>
+<div id="charts.total_changed_lines_by_author_by_date"></div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1669075200000,84 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+        
+        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.changed_lines_by_author_by_date"></div>
 </div>
 </div>
 </div>
