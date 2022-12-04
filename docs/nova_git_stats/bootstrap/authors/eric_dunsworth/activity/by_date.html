@@ -48,10 +48,10 @@ body { padding-top: 60px; }
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
 <li class='nav-item' role='presentation'>
-<a class='nav-link' href='by_date.html'>Activity by date</a>
+<a class='nav-link active' href='by_date.html'>Activity by date</a>
 </li>
 <li class='nav-item' role='presentation'>
-<a class='nav-link active' href='hour_of_day.html'>Hour of day</a>
+<a class='nav-link' href='hour_of_day.html'>Hour of day</a>
 </li>
 <li class='nav-item' role='presentation'>
 <a class='nav-link' href='day_of_week.html'>Day of week</a>
@@ -72,106 +72,23 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Hour of day</h1>
-<h3>dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;</h3>
+<h1>Activity by date</h1>
+<h3>EricDunsworth &amp;lt;1907279+EricDunsworth@users.noreply.github.com&amp;gt;</h3>
 </div>
 </div>
-<table class='table table-bordered table-condensed'>
-<tr>
-<th>Hour</th>
-<th>0</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-<th>10</th>
-<th>11</th>
-<th>12</th>
-<th>13</th>
-<th>14</th>
-<th>15</th>
-<th>16</th>
-<th>17</th>
-<th>18</th>
-<th>19</th>
-<th>20</th>
-<th>21</th>
-<th>22</th>
-<th>23</th>
-</tr>
-<tr>
-<th>Commits</th>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>2</td>
-<td>10</td>
-<td>22</td>
-<td>36</td>
-<td>22</td>
-<td>20</td>
-<td>66</td>
-<td>42</td>
-<td>27</td>
-<td>36</td>
-<td>49</td>
-<td>42</td>
-<td>23</td>
-<td>15</td>
-<td>8</td>
-<td>8</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<th>Percentage</th>
-<td>0.5</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.2</td>
-<td>0.0</td>
-<td>0.5</td>
-<td>2.3</td>
-<td>5.1</td>
-<td>8.3</td>
-<td>5.1</td>
-<td>4.6</td>
-<td>15.2</td>
-<td>9.7</td>
-<td>6.2</td>
-<td>8.3</td>
-<td>11.3</td>
-<td>9.7</td>
-<td>5.3</td>
-<td>3.5</td>
-<td>1.8</td>
-<td>1.8</td>
-<td>0.2</td>
-<td>0.2</td>
-</tr>
-</table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 2,0,0,0,1,0,2,10,22,36,22,20,66,42,27,36,49,42,23,15,8,8,1,1 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1669705647000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
-        window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
+        window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_hour"></div>
+<div id="charts.activity_by_date"></div>
 </div>
 </div>
 
