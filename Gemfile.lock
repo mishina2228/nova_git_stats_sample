@@ -25,7 +25,7 @@ GEM
       concurrent-ruby (~> 1.0)
     lazy_high_charts (1.6.1)
       hash-deep-merge
-    loofah (2.19.0)
+    loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mini_portile2 (2.8.0)
