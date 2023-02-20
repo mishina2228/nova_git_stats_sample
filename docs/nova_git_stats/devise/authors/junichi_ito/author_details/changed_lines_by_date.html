@@ -47,48 +47,51 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='by_date.html'>Activity by date</a>
+<li class='nav-item'>
+<a class='nav-link' href='commits_by_date.html'>Commits by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='hour_of_day.html'>Hour of day</a>
+<li class='nav-item'>
+<a class='nav-link active' href='changed_lines_by_date.html'>Changed lines by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='day_of_week.html'>Day of week</a>
+<li class='nav-item'>
+<a class='nav-link' href='insertions_by_date.html'>Lines added by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='hour_of_week.html'>Hour of week</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='month_of_year.html'>Month of year</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link active' href='year.html'>Year</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='year_month.html'>Year and month</a>
+<li class='nav-item'>
+<a class='nav-link' href='deletions_by_date.html'>Lines deleted by date</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
-<div class='page-header text-center'>
-<h1>Year</h1>
-<h3>Carlos A. da Silva &amp;lt;carlosantoniodasilva@gmail.com&amp;gt;</h3>
-</div>
+<div class='page-header'>
+<h1 class='text-center'>Changed lines by date</h1>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Year" },"categories": [ 2009,2010,2011,2012,2013,2014,2015,2016,2017,2020,2021,2022,2023 ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_year","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by year","data": [ 138,40,5,20,50,11,8,1,16,32,40,7,16 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Junichi Ito","type": "spline","data": [ [ 1676100173000,4 ] ] }] };
         
-        window.chart_charts.activity_by_year = new Highcharts.Chart(options);
+        window.chart_charts.total_changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_year"></div>
+<div id="charts.total_changed_lines_by_author_by_date"></div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1676073600000,4 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+        
+        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.changed_lines_by_author_by_date"></div>
+</div>
 </div>
 </div>
 
