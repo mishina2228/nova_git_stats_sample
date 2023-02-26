@@ -47,80 +47,51 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='by_date.html'>Activity by date</a>
+<li class='nav-item'>
+<a class='nav-link' href='commits_by_date.html'>Commits by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='hour_of_day.html'>Hour of day</a>
+<li class='nav-item'>
+<a class='nav-link active' href='changed_lines_by_date.html'>Changed lines by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link active' href='day_of_week.html'>Day of week</a>
+<li class='nav-item'>
+<a class='nav-link' href='insertions_by_date.html'>Lines added by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='hour_of_week.html'>Hour of week</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='month_of_year.html'>Month of year</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='year.html'>Year</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='year_month.html'>Year and month</a>
+<li class='nav-item'>
+<a class='nav-link' href='deletions_by_date.html'>Lines deleted by date</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
-<div class='page-header text-center'>
-<h1>Day of week</h1>
-<h3>Romaric Pascal &amp;lt;hello@romaricpascal.is&amp;gt;</h3>
+<div class='page-header'>
+<h1 class='text-center'>Changed lines by date</h1>
 </div>
-</div>
-<table class='table table-bordered table-condensed'>
-<tr>
-<th>Day</th>
-<th>Sun</th>
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-<th>Sat</th>
-</tr>
-<tr>
-<th>Commits</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<th>Percentage</th>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>0.0</td>
-<td>50.0</td>
-<td>50.0</td>
-</tr>
-</table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 0,0,0,0,0,1,1 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Serhii Babakov","type": "spline","data": [ [ 1676891828000,2 ] ] }] };
         
-        window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
+        window.chart_charts.total_changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_wday"></div>
+<div id="charts.total_changed_lines_by_author_by_date"></div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1676851200000,2 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+        
+        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.changed_lines_by_author_by_date"></div>
+</div>
 </div>
 </div>
 
