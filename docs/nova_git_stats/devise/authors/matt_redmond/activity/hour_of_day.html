@@ -51,7 +51,7 @@ body { padding-top: 60px; }
 <a class='nav-link' href='by_date.html'>Activity by date</a>
 </li>
 <li class='nav-item' role='presentation'>
-<a class='nav-link' href='hour_of_day.html'>Hour of day</a>
+<a class='nav-link active' href='hour_of_day.html'>Hour of day</a>
 </li>
 <li class='nav-item' role='presentation'>
 <a class='nav-link' href='day_of_week.html'>Day of week</a>
@@ -60,7 +60,7 @@ body { padding-top: 60px; }
 <a class='nav-link' href='hour_of_week.html'>Hour of week</a>
 </li>
 <li class='nav-item' role='presentation'>
-<a class='nav-link active' href='month_of_year.html'>Month of year</a>
+<a class='nav-link' href='month_of_year.html'>Month of year</a>
 </li>
 <li class='nav-item' role='presentation'>
 <a class='nav-link' href='year.html'>Year</a>
@@ -72,25 +72,37 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Month of year</h1>
-<h3>tabakazu &amp;lt;tkazz.bd1@gmail.com&amp;gt;</h3>
+<h1>Hour of day</h1>
+<h3>Matt Redmond &amp;lt;matt.redmond@katalyst.com.au&amp;gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
 <tr>
-<th>Month</th>
-<th>Jan</th>
-<th>Feb</th>
-<th>Mar</th>
-<th>Apr</th>
-<th>May</th>
-<th>Jun</th>
-<th>Jul</th>
-<th>Aug</th>
-<th>Sep</th>
-<th>Oct</th>
-<th>Nov</th>
-<th>Dec</th>
+<th>Hour</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+<th>19</th>
+<th>20</th>
+<th>21</th>
+<th>22</th>
+<th>23</th>
 </tr>
 <tr>
 <th>Commits</th>
@@ -103,7 +115,19 @@ body { padding-top: 60px; }
 <td>0</td>
 <td>0</td>
 <td>0</td>
-<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>0</td>
 <td>0</td>
 </tr>
@@ -118,7 +142,19 @@ body { padding-top: 60px; }
 <td>0.0</td>
 <td>0.0</td>
 <td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
 <td>100.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
 <td>0.0</td>
 <td>0.0</td>
 </tr>
@@ -127,15 +163,15 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 0,0,0,0,0,0,0,0,0,2,0,0 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0 ] }] };
         
-        window.chart_charts.activity_by_month = new Highcharts.Chart(options);
+        window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_month"></div>
+<div id="charts.activity_by_hour"></div>
 </div>
 </div>
 
