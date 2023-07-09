@@ -54,7 +54,7 @@ body { padding-top: 60px; }
 <a class='nav-link' href='hour_of_day.html'>Hour of day</a>
 </li>
 <li class='nav-item' role='presentation'>
-<a class='nav-link' href='day_of_week.html'>Day of week</a>
+<a class='nav-link active' href='day_of_week.html'>Day of week</a>
 </li>
 <li class='nav-item' role='presentation'>
 <a class='nav-link' href='hour_of_week.html'>Hour of week</a>
@@ -66,63 +66,61 @@ body { padding-top: 60px; }
 <a class='nav-link' href='year.html'>Year</a>
 </li>
 <li class='nav-item' role='presentation'>
-<a class='nav-link active' href='year_month.html'>Year and month</a>
+<a class='nav-link' href='year_month.html'>Year and month</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Year and month</h1>
-<h3>ZhangChengLin &amp;lt;469946668@qq.com&amp;gt;</h3>
+<h1>Day of week</h1>
+<h3>PARTHIBAN &amp;lt;parthibanb224@gmail.com&amp;gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
 <tr>
-<th></th>
-<th>Jan</th>
-<th>Feb</th>
-<th>Mar</th>
-<th>Apr</th>
-<th>May</th>
-<th>Jun</th>
-<th>Jul</th>
-<th>Aug</th>
-<th>Sep</th>
-<th>Oct</th>
-<th>Nov</th>
-<th>Dec</th>
+<th>Day</th>
+<th>Sun</th>
+<th>Mon</th>
+<th>Tue</th>
+<th>Wed</th>
+<th>Thu</th>
+<th>Fri</th>
+<th>Sat</th>
 </tr>
 <tr>
-<th>2022</th>
+<th>Commits</th>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
 <td>0</td>
 </tr>
 <tr>
-<th>2023</th>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<th>Percentage</th>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>0.0</td>
+<td>100.0</td>
+<td>0.0</td>
 </tr>
 </table>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 0,0,0,0,0,1,0 ] }] };
+        
+        window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.activity_by_wday"></div>
 </div>
 </div>
 
