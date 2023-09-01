@@ -117,16 +117,16 @@ body { padding-top: 60px; }
 <td>30</td>
 <td>95</td>
 <td>78</td>
-<td>83</td>
+<td>85</td>
 <td>81</td>
 <td>56</td>
 <td>60</td>
 <td>67</td>
-<td>75</td>
-<td>53</td>
+<td>76</td>
+<td>54</td>
 <td>30</td>
-<td>26</td>
-<td>23</td>
+<td>27</td>
+<td>25</td>
 <td>23</td>
 <td>12</td>
 <td>14</td>
@@ -142,20 +142,20 @@ body { padding-top: 60px; }
 <td>0.0</td>
 <td>0.1</td>
 <td>3.6</td>
-<td>11.5</td>
-<td>9.5</td>
-<td>10.1</td>
+<td>11.4</td>
+<td>9.4</td>
+<td>10.2</td>
 <td>9.8</td>
-<td>6.8</td>
-<td>7.3</td>
+<td>6.7</td>
+<td>7.2</td>
 <td>8.1</td>
-<td>9.1</td>
-<td>6.4</td>
+<td>9.2</td>
+<td>6.5</td>
 <td>3.6</td>
-<td>3.2</td>
+<td>3.3</td>
+<td>3.0</td>
 <td>2.8</td>
-<td>2.8</td>
-<td>1.5</td>
+<td>1.4</td>
 <td>1.7</td>
 </tr>
 </table>
@@ -163,7 +163,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 9,4,3,0,0,0,0,1,30,95,78,83,81,56,60,67,75,53,30,26,23,23,12,14 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 9,4,3,0,0,0,0,1,30,95,78,85,81,56,60,67,76,54,30,27,25,23,12,14 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
