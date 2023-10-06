@@ -26,7 +26,7 @@ jobs:
           bundler-cache: true
       - name: Execute GitStats
         run: bundle exec git_stats generate -p repos/${{ github.job }} -o docs/nova_git_stats/${{ github.job }} --silent
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Automatic update of ${{ github.job }} repository statistics
           commit_author: GitHub Actions <actions@github.com>
