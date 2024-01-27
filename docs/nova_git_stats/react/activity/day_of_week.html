@@ -90,17 +90,17 @@ body { padding-top: 60px; }
 <tr>
 <th>Commits</th>
 <td>718</td>
-<td>2594</td>
-<td>2952</td>
-<td>3001</td>
-<td>2822</td>
-<td>2366</td>
+<td>2598</td>
+<td>2959</td>
+<td>3010</td>
+<td>2834</td>
+<td>2386</td>
 <td>756</td>
 </tr>
 <tr>
 <th>Percentage</th>
 <td>4.7</td>
-<td>17.1</td>
+<td>17.0</td>
 <td>19.4</td>
 <td>19.7</td>
 <td>18.6</td>
@@ -112,7 +112,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 718,2594,2952,3001,2822,2366,756 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 718,2598,2959,3010,2834,2386,756 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
