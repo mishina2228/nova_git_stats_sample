@@ -47,80 +47,38 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='by_date.html'>Activity by date</a>
+<li class='nav-item'>
+<a class='nav-link active' href='commits_by_date.html'>Commits by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='hour_of_day.html'>Hour of day</a>
+<li class='nav-item'>
+<a class='nav-link' href='changed_lines_by_date.html'>Changed lines by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link active' href='day_of_week.html'>Day of week</a>
+<li class='nav-item'>
+<a class='nav-link' href='insertions_by_date.html'>Lines added by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='hour_of_week.html'>Hour of week</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='month_of_year.html'>Month of year</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='year.html'>Year</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='year_month.html'>Year and month</a>
+<li class='nav-item'>
+<a class='nav-link' href='deletions_by_date.html'>Lines deleted by date</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
-<div class='page-header text-center'>
-<h1>Day of week</h1>
-<h3>dependabot[bot] &amp;lt;49699333+dependabot[bot]@users.noreply.github.com&amp;gt;</h3>
+<div class='page-header'>
+<h1 class='text-center'>Commits by date</h1>
 </div>
-</div>
-<table class='table table-bordered table-condensed'>
-<tr>
-<th>Day</th>
-<th>Sun</th>
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-<th>Sat</th>
-</tr>
-<tr>
-<th>Commits</th>
-<td>11</td>
-<td>28</td>
-<td>438</td>
-<td>84</td>
-<td>53</td>
-<td>40</td>
-<td>22</td>
-</tr>
-<tr>
-<th>Percentage</th>
-<td>1.6</td>
-<td>4.1</td>
-<td>64.8</td>
-<td>12.4</td>
-<td>7.8</td>
-<td>5.9</td>
-<td>3.3</td>
-</tr>
-</table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 11,28,438,84,53,40,22 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Iván Pereira","type": "spline","data": [ [ 1712339401000,1 ] ] }] };
         
-        window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_wday"></div>
+<div id="charts.commits_sum_by_author_by_date"></div>
+</div>
 </div>
 </div>
 
