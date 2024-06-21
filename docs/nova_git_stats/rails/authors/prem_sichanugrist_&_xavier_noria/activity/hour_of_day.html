@@ -114,12 +114,12 @@ body { padding-top: 60px; }
 <td>20</td>
 <td>20</td>
 <td>33</td>
-<td>59</td>
-<td>105</td>
-<td>99</td>
+<td>60</td>
+<td>106</td>
+<td>100</td>
 <td>105</td>
 <td>68</td>
-<td>97</td>
+<td>100</td>
 <td>95</td>
 <td>82</td>
 <td>71</td>
@@ -142,20 +142,20 @@ body { padding-top: 60px; }
 <td>0.9</td>
 <td>1.5</td>
 <td>2.7</td>
-<td>4.7</td>
+<td>4.8</td>
 <td>4.5</td>
 <td>4.7</td>
-<td>3.1</td>
-<td>4.4</td>
+<td>3.0</td>
+<td>4.5</td>
 <td>4.3</td>
 <td>3.7</td>
 <td>3.2</td>
 <td>4.0</td>
 <td>4.2</td>
-<td>4.0</td>
+<td>3.9</td>
 <td>5.3</td>
 <td>5.7</td>
-<td>9.3</td>
+<td>9.2</td>
 <td>9.8</td>
 </tr>
 </table>
@@ -163,7 +163,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 199,112,60,34,25,20,20,33,59,105,99,105,68,97,95,82,71,89,94,88,118,126,206,219 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 199,112,60,34,25,20,20,33,60,106,100,105,68,100,95,82,71,89,94,88,118,126,206,219 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
