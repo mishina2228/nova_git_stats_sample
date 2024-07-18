@@ -115,13 +115,13 @@ body { padding-top: 60px; }
 <td>0</td>
 <td>1</td>
 <td>5</td>
-<td>28</td>
+<td>31</td>
 <td>54</td>
-<td>87</td>
-<td>98</td>
+<td>89</td>
+<td>99</td>
 <td>44</td>
 <td>61</td>
-<td>78</td>
+<td>79</td>
 <td>64</td>
 <td>48</td>
 <td>44</td>
@@ -133,7 +133,7 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Percentage</th>
-<td>2.6</td>
+<td>2.5</td>
 <td>0.4</td>
 <td>0.7</td>
 <td>0.0</td>
@@ -142,20 +142,20 @@ body { padding-top: 60px; }
 <td>0.0</td>
 <td>0.1</td>
 <td>0.7</td>
-<td>3.8</td>
-<td>7.3</td>
-<td>11.8</td>
-<td>13.2</td>
+<td>4.1</td>
+<td>7.2</td>
+<td>11.9</td>
+<td>13.3</td>
 <td>5.9</td>
 <td>8.2</td>
-<td>10.5</td>
+<td>10.6</td>
 <td>8.6</td>
-<td>6.5</td>
+<td>6.4</td>
 <td>5.9</td>
 <td>2.8</td>
-<td>2.6</td>
-<td>3.4</td>
-<td>2.2</td>
+<td>2.5</td>
+<td>3.3</td>
+<td>2.1</td>
 <td>2.7</td>
 </tr>
 </table>
@@ -163,7 +163,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 19,3,5,0,0,0,0,1,5,28,54,87,98,44,61,78,64,48,44,21,19,25,16,20 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 19,3,5,0,0,0,0,1,5,31,54,89,99,44,61,79,64,48,44,21,19,25,16,20 ] }] };
         
         window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
 
