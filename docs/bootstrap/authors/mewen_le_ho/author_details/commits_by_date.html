@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NovaGitStats - bootstrap</title>
+<meta charset='utf-8'>
+<style>
+body { padding-top: 60px; }
+</style>
+<link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' rel='stylesheet'>
+<link href='../../../assets/menu.css' rel='stylesheet' type='text/css'>
+<script crossorigin='anonymous' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<script src='../../../assets/highstock.js' type='text/javascript'></script>
+<script src='../../../assets/exporting.js' type='text/javascript'></script>
+<script src='../../../assets/export-data.js' type='text/javascript'></script>
+</head>
+<body>
+<nav class='navbar navbar-light fixed-top navbar-expand-md bg-light'>
+<div class='container'>
+<a class='navbar-brand' href='../../../index.html'>NovaGitStats - bootstrap</a>
+<button class='menu-icon navbar-toggler collapsed' data-bs-target='#navbar-menu' data-bs-toggle='collapse'>
+<span class='navbar-toggler-icon'></span>
+</button>
+<div class='navbar-collapse collapse' id='navbar-menu'>
+<ul class='nav navbar-nav'>
+<li class='nav-item'>
+<a class='nav-link' href='../../../general.html'>General</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../activity/by_date.html'>Activity</a>
+</li>
+<li class='nav-item active'>
+<a class='nav-link' href='../../best_authors.html'>Authors</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../files/by_date.html'>Files</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../lines/by_date.html'>Lines</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='../../../comments/by_date.html'>Comments</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class='container'>
+<div class='tabbable tabs-left'>
+<ul class='nav nav-tabs'>
+<li class='nav-item'>
+<a class='nav-link active' href='commits_by_date.html'>Commits by date</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='changed_lines_by_date.html'>Changed lines by date</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='insertions_by_date.html'>Lines added by date</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link' href='deletions_by_date.html'>Lines deleted by date</a>
+</li>
+</ul>
+<div class='tab-content'>
+<div class='tab-pane active'>
+<div class='page-header'>
+<h1 class='text-center'>Commits by date</h1>
+</div>
+                <script type="text/javascript">
+        (function() {
+
+          window.addEventListener('load', function() {
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "MewenLeHo","type": "spline","data": [ [ 1674481092000,1 ],[ 1674518400000,1 ],[ 1674604800000,1 ],[ 1674691200000,1 ],[ 1674777600000,1 ],[ 1674864000000,1 ],[ 1674950400000,1 ],[ 1675036800000,1 ],[ 1675123200000,1 ],[ 1675209600000,1 ],[ 1675296000000,1 ],[ 1675382400000,1 ],[ 1675468800000,1 ],[ 1675555200000,1 ],[ 1675641600000,1 ],[ 1675728000000,1 ],[ 1675814400000,1 ],[ 1675900800000,1 ],[ 1675987200000,1 ],[ 1676073600000,1 ],[ 1676160000000,1 ],[ 1676246400000,1 ],[ 1676332800000,1 ],[ 1676419200000,1 ],[ 1676505600000,1 ],[ 1676592000000,1 ],[ 1676678400000,1 ],[ 1676764800000,1 ],[ 1676851200000,1 ],[ 1676937600000,1 ],[ 1677024000000,1 ],[ 1677110400000,1 ],[ 1677196800000,1 ],[ 1677283200000,1 ],[ 1677369600000,1 ],[ 1677456000000,1 ],[ 1677542400000,1 ],[ 1677628800000,1 ],[ 1677715200000,1 ],[ 1677801600000,1 ],[ 1677888000000,1 ],[ 1677974400000,1 ],[ 1678060800000,1 ],[ 1678147200000,1 ],[ 1678233600000,1 ],[ 1678320000000,1 ],[ 1678406400000,1 ],[ 1678492800000,1 ],[ 1678579200000,1 ],[ 1678665600000,1 ],[ 1678752000000,1 ],[ 1678838400000,1 ],[ 1678924800000,1 ],[ 1679011200000,1 ],[ 1679097600000,1 ],[ 1679184000000,1 ],[ 1679270400000,1 ],[ 1679356800000,1 ],[ 1679443200000,1 ],[ 1679529600000,1 ],[ 1679616000000,1 ],[ 1679702400000,1 ],[ 1679788800000,1 ],[ 1679875200000,1 ],[ 1679961600000,1 ],[ 1680048000000,1 ],[ 1680134400000,1 ],[ 1680220800000,1 ],[ 1680307200000,1 ],[ 1680393600000,1 ],[ 1680480000000,1 ],[ 1680566400000,1 ],[ 1680652800000,1 ],[ 1680739200000,1 ],[ 1680825600000,1 ],[ 1680912000000,1 ],[ 1680998400000,1 ],[ 1681084800000,1 ],[ 1681171200000,1 ],[ 1681257600000,1 ],[ 1681344000000,1 ],[ 1681430400000,1 ],[ 1681516800000,1 ],[ 1681603200000,1 ],[ 1681689600000,1 ],[ 1681776000000,1 ],[ 1681862400000,1 ],[ 1681948800000,1 ],[ 1682035200000,1 ],[ 1682121600000,1 ],[ 1682208000000,1 ],[ 1682294400000,1 ],[ 1682380800000,1 ],[ 1682467200000,1 ],[ 1682553600000,1 ],[ 1682640000000,1 ],[ 1682726400000,1 ],[ 1682812800000,1 ],[ 1682899200000,1 ],[ 1682985600000,1 ],[ 1683072000000,1 ],[ 1683158400000,1 ],[ 1683244800000,1 ],[ 1683331200000,1 ],[ 1683417600000,1 ],[ 1683504000000,1 ],[ 1683590400000,1 ],[ 1683676800000,1 ],[ 1683763200000,1 ],[ 1683849600000,1 ],[ 1683936000000,1 ],[ 1684022400000,1 ],[ 1684108800000,1 ],[ 1684195200000,1 ],[ 1684281600000,1 ],[ 1684368000000,1 ],[ 1684454400000,1 ],[ 1684540800000,1 ],[ 1684627200000,1 ],[ 1684713600000,1 ],[ 1684800000000,1 ],[ 1684886400000,1 ],[ 1684972800000,1 ],[ 1685059200000,1 ],[ 1685145600000,1 ],[ 1685232000000,1 ],[ 1685318400000,1 ],[ 1685404800000,1 ],[ 1685491200000,1 ],[ 1685577600000,1 ],[ 1685664000000,1 ],[ 1685750400000,1 ],[ 1685836800000,1 ],[ 1685923200000,1 ],[ 1686009600000,1 ],[ 1686096000000,1 ],[ 1686182400000,1 ],[ 1686268800000,1 ],[ 1686355200000,1 ],[ 1686441600000,1 ],[ 1686528000000,1 ],[ 1686614400000,1 ],[ 1686700800000,1 ],[ 1686787200000,1 ],[ 1686873600000,1 ],[ 1686960000000,1 ],[ 1687046400000,1 ],[ 1687132800000,1 ],[ 1687219200000,1 ],[ 1687305600000,1 ],[ 1687392000000,1 ],[ 1687478400000,1 ],[ 1687564800000,1 ],[ 1687651200000,1 ],[ 1687737600000,1 ],[ 1687824000000,1 ],[ 1687910400000,1 ],[ 1687996800000,1 ],[ 1688083200000,1 ],[ 1688169600000,1 ],[ 1688256000000,1 ],[ 1688342400000,1 ],[ 1688428800000,1 ],[ 1688515200000,1 ],[ 1688601600000,1 ],[ 1688688000000,1 ],[ 1688774400000,1 ],[ 1688860800000,1 ],[ 1688947200000,1 ],[ 1689033600000,1 ],[ 1689120000000,1 ],[ 1689206400000,1 ],[ 1689292800000,1 ],[ 1689379200000,1 ],[ 1689465600000,1 ],[ 1689552000000,1 ],[ 1689638400000,1 ],[ 1689724800000,1 ],[ 1689811200000,1 ],[ 1689897600000,1 ],[ 1689984000000,1 ],[ 1690070400000,1 ],[ 1690156800000,1 ],[ 1690243200000,1 ],[ 1690329600000,1 ],[ 1690416000000,1 ],[ 1690502400000,1 ],[ 1690588800000,1 ],[ 1690675200000,1 ],[ 1690761600000,1 ],[ 1690848000000,1 ],[ 1690934400000,1 ],[ 1691020800000,1 ],[ 1691107200000,1 ],[ 1691193600000,1 ],[ 1691280000000,1 ],[ 1691366400000,1 ],[ 1691452800000,1 ],[ 1691539200000,1 ],[ 1691625600000,1 ],[ 1691712000000,1 ],[ 1691798400000,1 ],[ 1691884800000,1 ],[ 1691971200000,1 ],[ 1692057600000,1 ],[ 1692144000000,1 ],[ 1692230400000,1 ],[ 1692316800000,1 ],[ 1692403200000,1 ],[ 1692489600000,1 ],[ 1692576000000,1 ],[ 1692662400000,1 ],[ 1692748800000,1 ],[ 1692835200000,1 ],[ 1692921600000,1 ],[ 1693008000000,1 ],[ 1693094400000,1 ],[ 1693180800000,1 ],[ 1693267200000,1 ],[ 1693353600000,1 ],[ 1693440000000,1 ],[ 1693526400000,1 ],[ 1693612800000,1 ],[ 1693699200000,1 ],[ 1693785600000,1 ],[ 1693872000000,1 ],[ 1693958400000,1 ],[ 1694044800000,1 ],[ 1694131200000,1 ],[ 1694217600000,1 ],[ 1694304000000,1 ],[ 1694390400000,1 ],[ 1694476800000,1 ],[ 1694563200000,1 ],[ 1694649600000,1 ],[ 1694736000000,1 ],[ 1694822400000,1 ],[ 1694908800000,1 ],[ 1694995200000,1 ],[ 1695081600000,1 ],[ 1695168000000,1 ],[ 1695254400000,1 ],[ 1695385913000,2 ] ] }] };
+        
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+
+          });
+                })()
+        </script>
+
+<div id="charts.commits_sum_by_author_by_date"></div>
+</div>
+</div>
+</div>
+
+
+</div>
+<script crossorigin='anonymous' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js'></script>
+</body>
+</html>

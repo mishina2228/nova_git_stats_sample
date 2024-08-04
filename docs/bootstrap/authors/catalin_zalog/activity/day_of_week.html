@@ -73,7 +73,7 @@ body { padding-top: 60px; }
 <div class='tab-pane active'>
 <div class='page-header text-center'>
 <h1>Day of week</h1>
-<h3>Catalin Zalog &lt;c@zalog.ro&gt;</h3>
+<h3>Catalin Zalog &amp;lt;c@zalog.ro&amp;gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
@@ -92,27 +92,27 @@ body { padding-top: 60px; }
 <td>5</td>
 <td>4</td>
 <td>2</td>
-<td>2</td>
+<td>4</td>
 <td>3</td>
 <td>1</td>
 <td>8</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>20.0</td>
-<td>16.0</td>
-<td>8.0</td>
-<td>8.0</td>
-<td>12.0</td>
-<td>4.0</td>
-<td>32.0</td>
+<td>18.5</td>
+<td>14.8</td>
+<td>7.4</td>
+<td>14.8</td>
+<td>11.1</td>
+<td>3.7</td>
+<td>29.6</td>
 </tr>
 </table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 5,4,2,2,3,1,8 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 5,4,2,4,3,1,8 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
