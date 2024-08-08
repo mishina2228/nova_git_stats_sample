@@ -73,7 +73,7 @@ body { padding-top: 60px; }
 <div class='tab-pane active'>
 <div class='page-header text-center'>
 <h1>Day of week</h1>
-<h3>Michał Gołębiowski-Owczarek &lt;m.goleb@gmail.com&gt;</h3>
+<h3>Michał Gołębiowski-Owczarek &amp;lt;m.goleb@gmail.com&amp;gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
@@ -90,29 +90,29 @@ body { padding-top: 60px; }
 <tr>
 <th>Commits</th>
 <td>27</td>
-<td>163</td>
-<td>71</td>
-<td>72</td>
-<td>34</td>
-<td>27</td>
+<td>199</td>
+<td>82</td>
+<td>86</td>
+<td>41</td>
+<td>30</td>
 <td>21</td>
 </tr>
 <tr>
 <th>Percentage</th>
-<td>6.5</td>
-<td>39.3</td>
-<td>17.1</td>
-<td>17.3</td>
-<td>8.2</td>
-<td>6.5</td>
-<td>5.1</td>
+<td>5.6</td>
+<td>40.9</td>
+<td>16.9</td>
+<td>17.7</td>
+<td>8.4</td>
+<td>6.2</td>
+<td>4.3</td>
 </tr>
 </table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 27,163,71,72,34,27,21 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 27,199,82,86,41,30,21 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
