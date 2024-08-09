@@ -73,7 +73,7 @@ body { padding-top: 60px; }
 <div class='tab-pane active'>
 <div class='page-header text-center'>
 <h1>Day of week</h1>
-<h3>Haroon Ahmed &lt;haroon.ahmed25@gmail.com&gt;</h3>
+<h3>Haroon Ahmed &amp;lt;haroon.ahmed25@gmail.com&amp;gt;</h3>
 </div>
 </div>
 <table class='table table-bordered table-condensed'>
@@ -89,9 +89,9 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Commits</th>
-<td>1</td>
-<td>4</td>
-<td>4</td>
+<td>2</td>
+<td>9</td>
+<td>7</td>
 <td>3</td>
 <td>4</td>
 <td>3</td>
@@ -99,20 +99,20 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Percentage</th>
-<td>4.5</td>
-<td>18.2</td>
-<td>18.2</td>
-<td>13.6</td>
-<td>18.2</td>
-<td>13.6</td>
-<td>13.6</td>
+<td>6.5</td>
+<td>29.0</td>
+<td>22.6</td>
+<td>9.7</td>
+<td>12.9</td>
+<td>9.7</td>
+<td>9.7</td>
 </tr>
 </table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 1,4,4,3,4,3,3 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 2,9,7,3,4,3,3 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
