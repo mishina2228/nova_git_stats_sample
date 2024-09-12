@@ -54,7 +54,7 @@ body { padding-top: 60px; }
 <a class='nav-link' href='hour_of_day.html'>Hour of day</a>
 </li>
 <li class='nav-item' role='presentation'>
-<a class='nav-link active' href='day_of_week.html'>Day of week</a>
+<a class='nav-link' href='day_of_week.html'>Day of week</a>
 </li>
 <li class='nav-item' role='presentation'>
 <a class='nav-link' href='hour_of_week.html'>Hour of week</a>
@@ -63,7 +63,7 @@ body { padding-top: 60px; }
 <a class='nav-link' href='month_of_year.html'>Month of year</a>
 </li>
 <li class='nav-item' role='presentation'>
-<a class='nav-link' href='year.html'>Year</a>
+<a class='nav-link active' href='year.html'>Year</a>
 </li>
 <li class='nav-item' role='presentation'>
 <a class='nav-link' href='year_month.html'>Year and month</a>
@@ -72,55 +72,23 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Day of week</h1>
-<h3>Michał Gołębiowski-Owczarek &amp;lt;m.goleb@gmail.com&amp;gt;</h3>
+<h1>Year</h1>
+<h3>ac-mmi &amp;lt;79802170+ac-mmi@users.noreply.github.com&amp;gt;</h3>
 </div>
 </div>
-<table class='table table-bordered table-condensed'>
-<tr>
-<th>Day</th>
-<th>Sun</th>
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-<th>Sat</th>
-</tr>
-<tr>
-<th>Commits</th>
-<td>27</td>
-<td>200</td>
-<td>82</td>
-<td>86</td>
-<td>41</td>
-<td>31</td>
-<td>21</td>
-</tr>
-<tr>
-<th>Percentage</th>
-<td>5.5</td>
-<td>41.0</td>
-<td>16.8</td>
-<td>17.6</td>
-<td>8.4</td>
-<td>6.4</td>
-<td>4.3</td>
-</tr>
-</table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 27,200,82,86,41,31,21 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Year" },"categories": [ 2024 ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_year","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by year","data": [ 1 ] }] };
         
-        window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
+        window.chart_charts.activity_by_year = new Highcharts.Chart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_wday"></div>
+<div id="charts.activity_by_year"></div>
 </div>
 </div>
 
