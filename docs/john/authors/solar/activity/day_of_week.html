@@ -93,7 +93,7 @@ body { padding-top: 60px; }
 <td>492</td>
 <td>459</td>
 <td>340</td>
-<td>343</td>
+<td>349</td>
 <td>248</td>
 <td>354</td>
 </tr>
@@ -103,7 +103,7 @@ body { padding-top: 60px; }
 <td>18.2</td>
 <td>17.0</td>
 <td>12.6</td>
-<td>12.7</td>
+<td>12.9</td>
 <td>9.2</td>
 <td>13.1</td>
 </tr>
@@ -112,7 +112,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 465,492,459,340,343,248,354 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Day" },"categories": [ "Sun","Mon","Tue","Wed","Thu","Fri","Sat" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_wday","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by day of week","data": [ 465,492,459,340,349,248,354 ] }] };
         
         window.chart_charts.activity_by_wday = new Highcharts.Chart(options);
 
