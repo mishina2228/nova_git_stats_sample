@@ -51,10 +51,10 @@ body { padding-top: 60px; }
 <a class='nav-link' href='commits_by_date.html'>Commits by date</a>
 </li>
 <li class='nav-item'>
-<a class='nav-link active' href='changed_lines_by_date.html'>Changed lines by date</a>
+<a class='nav-link' href='changed_lines_by_date.html'>Changed lines by date</a>
 </li>
 <li class='nav-item'>
-<a class='nav-link' href='insertions_by_date.html'>Lines added by date</a>
+<a class='nav-link active' href='insertions_by_date.html'>Lines added by date</a>
 </li>
 <li class='nav-item'>
 <a class='nav-link' href='deletions_by_date.html'>Lines deleted by date</a>
@@ -63,34 +63,34 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='text-center'>Changed lines by date</h1>
+<h1 class='text-center'>Lines added by date</h1>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Nikita Mikhaylov","type": "spline","data": [ [ 1600061611000,67 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Simmon Li","type": "spline","data": [ [ 1739382410000,1 ] ] }] };
         
-        window.chart_charts.total_changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+        window.chart_charts.total_insertions_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.total_changed_lines_by_author_by_date"></div>
+<div id="charts.total_insertions_by_author_by_date"></div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1600041600000,67 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1739318400000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
-        window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+        window.chart_charts.insertions_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.changed_lines_by_author_by_date"></div>
+<div id="charts.insertions_by_author_by_date"></div>
 </div>
 </div>
 </div>
