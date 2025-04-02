@@ -48,7 +48,7 @@ body { padding-top: 60px; }
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
 <li class='nav-item' role='presentation'>
-<a class='nav-link' href='by_date.html'>Activity by date</a>
+<a class='nav-link active' href='by_date.html'>Activity by date</a>
 </li>
 <li class='nav-item' role='presentation'>
 <a class='nav-link' href='hour_of_day.html'>Hour of day</a>
@@ -63,7 +63,7 @@ body { padding-top: 60px; }
 <a class='nav-link' href='month_of_year.html'>Month of year</a>
 </li>
 <li class='nav-item' role='presentation'>
-<a class='nav-link active' href='year.html'>Year</a>
+<a class='nav-link' href='year.html'>Year</a>
 </li>
 <li class='nav-item' role='presentation'>
 <a class='nav-link' href='year_month.html'>Year and month</a>
@@ -72,23 +72,23 @@ body { padding-top: 60px; }
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header text-center'>
-<h1>Year</h1>
-<h3>magnum &amp;lt;magnumripper@hushmail.com&amp;gt;</h3>
+<h1>Activity by date</h1>
+<h3>Peter Peshev &amp;lt;peshev@gmail.com&amp;gt;</h3>
 </div>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Year" },"categories": [ 2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025 ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_year","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by year","data": [ 115,1622,1148,1068,1380,302,334,582,274,122,166,59,28,76,28 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_date" },"subtitle": {  },"series": [{ "name": "Commits by date","type": "column","data": [ [ 1735508116000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
-        window.chart_charts.activity_by_year = new Highcharts.Chart(options);
+        window.chart_charts.activity_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_year"></div>
+<div id="charts.activity_by_date"></div>
 </div>
 </div>
 
