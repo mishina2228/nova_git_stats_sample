@@ -97,7 +97,7 @@ body { padding-top: 60px; }
 <td>150</td>
 <td>201</td>
 <td>117</td>
-<td>144</td>
+<td>149</td>
 <td>127</td>
 <td>112</td>
 <td>134</td>
@@ -109,10 +109,10 @@ body { padding-top: 60px; }
 </tr>
 <tr>
 <th>Percentage</th>
-<td>9.3</td>
+<td>9.2</td>
 <td>12.4</td>
 <td>7.2</td>
-<td>8.9</td>
+<td>9.2</td>
 <td>7.8</td>
 <td>6.9</td>
 <td>8.3</td>
@@ -127,7 +127,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 150,201,117,144,127,112,134,140,94,134,128,138 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Month" },"categories": [ "Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec" ] },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_month","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by month","data": [ 150,201,117,149,127,112,134,140,94,134,128,138 ] }] };
         
         window.chart_charts.activity_by_month = new Highcharts.Chart(options);
 
