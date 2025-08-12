@@ -12,7 +12,7 @@ jobs:
   devise:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Add repo if not exists
         run: if [ ! -d repos/${{ github.job }} ]; then git submodule add https://github.com/heartcombo/devise.git repos/${{ github.job }}; fi;
       - name: Checkout repo
