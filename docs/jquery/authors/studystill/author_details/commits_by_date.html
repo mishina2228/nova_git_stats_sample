@@ -48,7 +48,7 @@ body { padding-top: 60px; }
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
 <li class='nav-item'>
-<a class='nav-link' href='commits_by_date.html'>Commits by date</a>
+<a class='nav-link active' href='commits_by_date.html'>Commits by date</a>
 </li>
 <li class='nav-item'>
 <a class='nav-link' href='changed_lines_by_date.html'>Changed lines by date</a>
@@ -57,40 +57,27 @@ body { padding-top: 60px; }
 <a class='nav-link' href='insertions_by_date.html'>Lines added by date</a>
 </li>
 <li class='nav-item'>
-<a class='nav-link active' href='deletions_by_date.html'>Lines deleted by date</a>
+<a class='nav-link' href='deletions_by_date.html'>Lines deleted by date</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
 <div class='page-header'>
-<h1 class='text-center'>Lines deleted by date</h1>
+<h1 class='text-center'>Commits by date</h1>
 </div>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Tom H Fuertes","type": "spline","data": [ [ 1364186866000,1 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "studystill","type": "spline","data": [ [ 1755548813000,1 ] ] }] };
         
-        window.chart_charts.total_deletions_by_author_by_date = new Highcharts.StockChart(options);
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.total_deletions_by_author_by_date"></div>
-                <script type="text/javascript">
-        (function() {
-
-          window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1364083200000,1 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
-        
-        window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
-
-          });
-                })()
-        </script>
-
-<div id="charts.deletions_by_author_by_date"></div>
+<div id="charts.commits_sum_by_author_by_date"></div>
 </div>
 </div>
 </div>
