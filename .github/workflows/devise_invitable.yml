@@ -12,7 +12,7 @@ jobs:
   devise_invitable:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Add repo if not exists
         run: if [ ! -d repos/${{ github.job }} ]; then git submodule add https://github.com/scambra/devise_invitable.git repos/${{ github.job }}; fi;
       - name: Checkout repo
