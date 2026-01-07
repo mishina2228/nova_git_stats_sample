@@ -47,131 +47,38 @@ body { padding-top: 60px; }
 <div class='container'>
 <div class='tabbable tabs-left'>
 <ul class='nav nav-tabs'>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='by_date.html'>Activity by date</a>
+<li class='nav-item'>
+<a class='nav-link active' href='commits_by_date.html'>Commits by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link active' href='hour_of_day.html'>Hour of day</a>
+<li class='nav-item'>
+<a class='nav-link' href='changed_lines_by_date.html'>Changed lines by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='day_of_week.html'>Day of week</a>
+<li class='nav-item'>
+<a class='nav-link' href='insertions_by_date.html'>Lines added by date</a>
 </li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='hour_of_week.html'>Hour of week</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='month_of_year.html'>Month of year</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='year.html'>Year</a>
-</li>
-<li class='nav-item' role='presentation'>
-<a class='nav-link' href='year_month.html'>Year and month</a>
+<li class='nav-item'>
+<a class='nav-link' href='deletions_by_date.html'>Lines deleted by date</a>
 </li>
 </ul>
 <div class='tab-content'>
 <div class='tab-pane active'>
-<div class='page-header text-center'>
-<h1>Hour of day</h1>
-<h3>Solar &amp;lt;solar@openwall.com&amp;gt;</h3>
+<div class='page-header'>
+<h1 class='text-center'>Commits by date</h1>
 </div>
-</div>
-<table class='table table-bordered table-condensed'>
-<tr>
-<th>Hour</th>
-<th>0</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-<th>10</th>
-<th>11</th>
-<th>12</th>
-<th>13</th>
-<th>14</th>
-<th>15</th>
-<th>16</th>
-<th>17</th>
-<th>18</th>
-<th>19</th>
-<th>20</th>
-<th>21</th>
-<th>22</th>
-<th>23</th>
-</tr>
-<tr>
-<th>Commits</th>
-<td>129</td>
-<td>182</td>
-<td>200</td>
-<td>160</td>
-<td>180</td>
-<td>160</td>
-<td>91</td>
-<td>76</td>
-<td>115</td>
-<td>56</td>
-<td>68</td>
-<td>56</td>
-<td>85</td>
-<td>123</td>
-<td>90</td>
-<td>101</td>
-<td>127</td>
-<td>111</td>
-<td>149</td>
-<td>141</td>
-<td>135</td>
-<td>155</td>
-<td>122</td>
-<td>112</td>
-</tr>
-<tr>
-<th>Percentage</th>
-<td>4.4</td>
-<td>6.2</td>
-<td>6.8</td>
-<td>5.5</td>
-<td>6.2</td>
-<td>5.5</td>
-<td>3.1</td>
-<td>2.6</td>
-<td>3.9</td>
-<td>1.9</td>
-<td>2.3</td>
-<td>1.9</td>
-<td>2.9</td>
-<td>4.2</td>
-<td>3.1</td>
-<td>3.5</td>
-<td>4.3</td>
-<td>3.8</td>
-<td>5.1</td>
-<td>4.8</td>
-<td>4.6</td>
-<td>5.3</td>
-<td>4.2</td>
-<td>3.8</td>
-</tr>
-</table>
                 <script type="text/javascript">
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": "Hour" },"categories": "0..23" },"yAxis": { "title": { "text": "Commits" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.activity_by_hour","type": "column" },"subtitle": {  },"series": [{ "name": "Commits by hour","data": [ 129,182,200,160,180,160,91,76,115,56,68,56,85,123,90,101,127,111,149,141,135,155,122,112 ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "dependabot[bot]","type": "spline","data": [ [ 1767265736000,1 ] ] }] };
         
-        window.chart_charts.activity_by_hour = new Highcharts.Chart(options);
+        window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
 
           });
                 })()
         </script>
 
-<div id="charts.activity_by_hour"></div>
+<div id="charts.commits_sum_by_author_by_date"></div>
+</div>
 </div>
 </div>
 
