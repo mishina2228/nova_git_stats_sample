@@ -69,7 +69,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Bruno Costanzo","type": "spline","data": [ [ 1791566796000,2 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Bruno Costanzo","type": "spline","data": [ [ 1791566796000,2 ],[ 1791569532000,15 ],[ 1791590400000,15 ],[ 1791676800000,15 ],[ 1791763200000,15 ],[ 1791849600000,15 ],[ 1791936000000,15 ],[ 1792022400000,15 ],[ 1792150152000,18 ],[ 1792195200000,18 ],[ 1792281600000,18 ],[ 1792368000000,18 ],[ 1792483754000,19 ],[ 1792488726000,19 ],[ 1792489460000,20 ],[ 1792499356000,29 ] ] }] };
         
         window.chart_charts.total_deletions_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -82,7 +82,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1791504000000,2 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.deletions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1791504000000,15 ],[ 1791590400000,0 ],[ 1791676800000,0 ],[ 1791763200000,0 ],[ 1791849600000,0 ],[ 1791936000000,0 ],[ 1792022400000,0 ],[ 1792108800000,3 ],[ 1792195200000,0 ],[ 1792281600000,0 ],[ 1792368000000,0 ],[ 1792454400000,11 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
         window.chart_charts.deletions_by_author_by_date = new Highcharts.StockChart(options);
 
