@@ -69,7 +69,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "ttrweb","type": "spline","data": [ [ 1792159206000,3 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "ttrweb","type": "spline","data": [ [ 1792159206000,3 ],[ 1792195200000,3 ],[ 1792281600000,3 ],[ 1792368000000,3 ],[ 1792454400000,3 ],[ 1792540800000,3 ],[ 1792627200000,3 ],[ 1792713600000,3 ],[ 1792812677000,4 ],[ 1792812707000,8 ],[ 1792886400000,8 ],[ 1792972800000,8 ],[ 1793059200000,8 ],[ 1793145600000,8 ],[ 1793285940000,10 ] ] }] };
         
         window.chart_charts.total_insertions_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -82,7 +82,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1792108800000,3 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.insertions_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1792108800000,3 ],[ 1792195200000,0 ],[ 1792281600000,0 ],[ 1792368000000,0 ],[ 1792454400000,0 ],[ 1792540800000,0 ],[ 1792627200000,0 ],[ 1792713600000,0 ],[ 1792800000000,5 ],[ 1792886400000,0 ],[ 1792972800000,0 ],[ 1793059200000,0 ],[ 1793145600000,0 ],[ 1793232000000,2 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
         window.chart_charts.insertions_by_author_by_date = new Highcharts.StockChart(options);
 

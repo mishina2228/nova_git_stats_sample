@@ -69,7 +69,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Clément Joubert","type": "spline","data": [ [ 1792685757000,7 ] ] }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.total_changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Clément Joubert","type": "spline","data": [ [ 1792685757000,7 ],[ 1792750928000,9 ],[ 1792800000000,9 ],[ 1792905242000,158 ],[ 1792972800000,158 ],[ 1793074867000,160 ],[ 1793074879000,194 ],[ 1793076833000,196 ],[ 1793092680000,221 ],[ 1793092705000,229 ],[ 1793166064000,233 ],[ 1793166422000,282 ],[ 1793176737000,288 ],[ 1793177677000,299 ],[ 1793195028000,342 ],[ 1793195192000,438 ],[ 1793248720000,450 ],[ 1793264401000,502 ],[ 1793264406000,515 ],[ 1793285805000,545 ],[ 1793338314000,606 ] ] }] };
         
         window.chart_charts.total_changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
@@ -82,7 +82,7 @@ body { padding-top: 60px; }
         (function() {
 
           window.addEventListener('load', function() {
-                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1792627200000,7 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
+                    var options = { "title": { "text": "" },"legend": { "enabled": false },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Lines by date","type": "column","data": [ [ 1792627200000,7 ],[ 1792713600000,2 ],[ 1792800000000,0 ],[ 1792886400000,149 ],[ 1792972800000,0 ],[ 1793059200000,71 ],[ 1793145600000,209 ],[ 1793232000000,107 ],[ 1793318400000,61 ] ],"dataGrouping": { "units": [ [ "day",[ 1 ] ],[ "week",[ 1 ] ] ],"forced": true } }] };
         
         window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
 
